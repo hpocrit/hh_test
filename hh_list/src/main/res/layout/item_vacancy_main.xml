@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginBottom="15dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/vacancyContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/item_background"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/looking_number"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/green_text"
+            android:textSize="14sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Сейчас просматривает 1 человек"
+            android:fontFamily="@font/sfprodisplayregular"/>
+
+        <ImageView
+            android:id="@+id/favorite_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:src="@drawable/heart_default"
+            android:contentDescription="heart"/>
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/looking_number"
+            tools:text="UI/UX дизайнер"
+            android:fontFamily="@font/sfprodisplaymedium"
+            android:layout_marginTop="10dp"/>
+
+<!--        <TextView-->
+<!--            android:id="@+id/price"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textSize="20sp"-->
+<!--            app:layout_constraintLeft_toLeftOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@id/name"-->
+<!--            tools:text="1500-2000 Br"-->
+<!--            android:fontFamily="@font/sfprodisplaysemibold"-->
+<!--            android:layout_marginTop="10dp"/>-->
+
+
+        <TextView
+            android:id="@+id/city"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/name"
+            tools:text="Минск"
+            android:fontFamily="@font/sfprodisplayregular"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/company"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/city"
+            tools:text="Еком дизайн"
+            android:fontFamily="@font/sfprodisplayregular"
+            android:layout_marginTop="5dp"
+            android:drawableEnd="@drawable/verify_icon"
+            android:drawablePadding="5dp"/>
+
+        <TextView
+            android:id="@+id/experience"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/company"
+            tools:text="Опыт от 1 года до 3 лет"
+            android:fontFamily="@font/sfprodisplayregular"
+            android:layout_marginTop="10dp"
+            android:drawableStart="@drawable/experience_icon"
+            android:drawablePadding="5dp"/>
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/light_gray_text"
+            android:textSize="14sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/experience"
+            tools:text="Опубликовано 14 февраля"
+            android:fontFamily="@font/sfprodisplayregular"
+            android:layout_marginTop="10dp"/>
+        
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/date"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/green_button"
+            android:textColor="@color/white"
+            android:text="Откликнуться"
+            android:padding="10dp"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
